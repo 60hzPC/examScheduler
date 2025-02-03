@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Scheduler System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Exam Scheduler System</h1>
+        <p>Automated Scheduling for Exams & Proctors</p>
+    </header>
+
+    <main>
+        <section class="form-container">
+            <h2>Enter Exam Details</h2>
+            <form id="exam-form">
+                <label for="room-number">Room Number:</label>
+                <input type="text" id="room-number" name="room-number" required>
+
+                <label for="building-name">Building Name:</label>
+                <input type="text" id="building-name" name="building-name" required>
+
+                <label for="subject">Subject:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="course-code">Course Code:</label>
+                <input type="text" id="course-code" name="course-code" required>
+
+                <label for="instructor">Instructor:</label>
+                <input type="text" id="instructor" name="instructor" required>
+
+                <label for="program">Program:</label>
+                <input type="text" id="program" name="program" required>
+
+                <label for="year-level">Year Level:</label>
+                <input type="text" id="year-level" name="year-level" required>
+
+                <label for="section">Section:</label>
+                <input type="text" id="section" name="section" required>
+
+                <label for="time">Time:</label>
+                <input type="text" id="time" name="time" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <button type="submit">Generate Schedule</button>
+            </form>
+        </section>
+
+        <section class="schedule-report">
+            <h2>Proctor Schedule Report</h2>
+            <table id="schedule-table">
+                <thead>
+                    <tr>
+                        <th>Room</th>
+                        <th>Building</th>
+                        <th>Subject</th>
+                        <th>Course Code</th>
+                        <th>Instructor</th>
+                        <th>Program</th>
+                        <th>Year Level</th>
+                        <th>Section</th>
+                        <th>Time</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Schedule data will be inserted here dynamically -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; examScheduler </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
